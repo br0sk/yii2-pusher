@@ -29,6 +29,6 @@ You can configure it in your application `components` configuration like so:
 
 An example of typical usage:
 
-    $pusher->trigger( 'my-channel', 'my_event', 'hello world' );
+    Yii::$app->pusher->trigger( 'my-channel', 'my_event', 'hello world' );
 
 This extension is a wrapper for [pusher-http-php](https://github.com/pusher/pusher-http-php)
