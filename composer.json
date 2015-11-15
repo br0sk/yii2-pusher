@@ -1,0 +1,19 @@
+{
+    "name": "br0sk/yii2-pusher",
+    "description": "Yii2 wrapper for Pusher",
+    "keywords": ["yii2", "realtime", "pusher.com"],
+    "homepage": "http://br0sk.blogspot.com",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/br0sk/yii2-pusher/issues",
+        "source": "https://github.com/br0sk/yii2-pusher"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "pusher/pusher-php-server": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {"br0sk\\pusher\\": ""}
+    }
+}
