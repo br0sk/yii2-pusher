@@ -3,16 +3,6 @@ A Yii2 extension for Pusher.com
 
 This is an extension for Yii2 that makes it easy to use Pusher.
 
-Add it to the composer file:
-
-    "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "*",
-        "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*",
-	  	"br0sk/yii2-pusher": "0.*",
-    },
-
 You can configure it in your application `components` configuration like so:
 
     'pusher' => [
