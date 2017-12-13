@@ -3,7 +3,7 @@
     "description": "Yii2 wrapper for Pusher",
     "keywords": ["yii2", "realtime", "pusher.com"],
     "homepage": "http://br0sk.blogspot.com",
-    "type": "project",
+    "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
         "issues": "https://github.com/br0sk/yii2-pusher/issues",
