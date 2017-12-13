@@ -16,7 +16,7 @@ class Pusher extends Component
     public $appKey = null;
     public $appSecret = null;
 
-    private $_selectableOptions = ['host', 'port', 'timeout', 'encrypted'];
+    private $_selectableOptions = ['host', 'port', 'timeout', 'encrypted', 'cluster'];
 
     public $options = [];
 
@@ -39,7 +39,7 @@ class Pusher extends Component
             throw new InvalidConfigException('AppSecret cannot be empty!');
         }
 
-        foreach ($this->options as $key => $value) {
+        foreach (array_keys($this->options) as $key) {
             if (in_array($key, $this->_selectableOptions) === false) {
                 throw new InvalidConfigException($key . ' is not a valid option!');
             }
@@ -86,7 +86,7 @@ class Pusher extends Component
      * @param bool $debug [optional]
      * @return bool|string
      */
-    public function trigger($channels, $event, $data, $socket_id = null, $debug = false, $already_encoded = false)
+    public function push($channels, $event, $data, $socket_id = null, $debug = false, $already_encoded = false)
     {
         $this->_pusher->trigger($channels, $event, $data, $socket_id, $debug, $already_encoded);
     }

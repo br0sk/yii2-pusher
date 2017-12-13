@@ -26,13 +26,13 @@ You can configure it in your application `components` configuration like so:
         /*
          * Optional parameters.
          */
-        'options' => ['encrypted' => true]
+        'options' => ['encrypted' => true, 'cluster' => 'YOUR_APP_CLUSTER']
     ],
 
 **note:** Find the configuration details in your account by clicking on the app you want to use.
 
 An example of typical usage:
 
-    Yii::$app->pusher->trigger('my-channel', 'my_event', 'hello world');
+    Yii::$app->pusher->push('my-channel', 'my_event', 'hello world');
 
 This extension is a wrapper for [pusher-http-php](https://github.com/pusher/pusher-http-php)
